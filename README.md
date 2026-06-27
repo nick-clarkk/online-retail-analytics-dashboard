@@ -13,14 +13,14 @@ design skills using a real-world, messy retail dataset.
 
 ## Data Cleaning (Power Query)
 
-- Removed 34,335 exact duplicate rows (3.2% of data)
-- Flagged returns (`IsReturn`) based on Invoice numbers starting with "C"
+- Removed 34,335 exact duplicate rows (3.2% of data).
+- Flagged returns (`IsReturn`) based on Invoice numbers starting with "C".
 - Flagged non-product line items (`IsProductCode`) to exclude postage, bank charges, 
-  discounts, and similar administrative entries from product-level analysis
-- Identified via the Kaggle dataset documentation that `Price` is denominated in GBP (£), not USD, so adjusted the currency formatting across the model accordingly
+  discounts, and similar administrative entries from product-level analysis.
+- Identified via the Kaggle dataset documentation that `Price` is denominated in GBP (£), not USD, so adjusted the currency formatting across the model accordingly.
 - Documented known data issues: ~23% of rows have null Customer IDs (retained for 
   revenue totals, excluded from RFM/cohort analysis), and ~817 rows have non-standard 
-  country labels (e.g. "Unspecified," "European Community")
+  country labels (e.g. "Unspecified," "European Community").
 
 ## Methodology
 
